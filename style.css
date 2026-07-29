@@ -1,0 +1,23 @@
+:root { font-family: Inter, system-ui, sans-serif; color: #18241e; background: #f5f8f3; }
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; padding: 36px 16px 64px; }
+main { max-width: 680px; margin: auto; }
+.intro { margin: 14px 4px 28px; }
+.eyebrow { color: #147a4c; font-size: .73rem; font-weight: 800; letter-spacing: .1em; }
+h1 { font-size: clamp(2.3rem, 8vw, 4.2rem); letter-spacing: -.06em; line-height: .9; margin: 8px 0 14px; }
+h2 { margin: 0; font-size: 1.05rem; }
+.intro > p:last-child { color: #52635a; font-size: 1.08rem; margin: 0; }
+.card { background: #fff; border: 1px solid #dce6de; border-radius: 16px; padding: 20px; margin-top: 14px; box-shadow: 0 6px 22px #163c2410; }
+label { display: block; font-size: .85rem; font-weight: 700; margin: 18px 0 7px; }
+label span, .hint { color: #69776f; font-weight: 400; }
+input { background: #fbfcfb; border: 1px solid #bfcec3; border-radius: 9px; color: inherit; font: inherit; padding: 11px 12px; width: 100%; }
+input:focus { border-color: #16804d; box-shadow: 0 0 0 3px #16804d22; outline: 0; }
+.hint { font-size: .78rem; margin: 6px 0 0; }
+.section-heading { align-items: center; display: flex; justify-content: space-between; gap: 14px; }
+button { background: #137a48; border: 0; border-radius: 9px; color: white; cursor: pointer; font: inherit; font-weight: 700; padding: 11px 14px; }
+button:hover { background: #0d643a; } button:disabled { background: #9aa8a0; cursor: not-allowed; }
+.secondary { background: #e5f2e9; color: #11623a; padding: 8px 10px; font-size: .82rem; }
+.pessoa { align-items: end; border-bottom: 1px solid #e8eee9; display: grid; gap: 10px; grid-template-columns: minmax(0, 1fr) 130px 32px; padding: 16px 0; }
+.pessoa input { margin-top: 6px; }.inline-label { margin: 0; font-size: .72rem; }.remover { background: #f9e7e7; color: #a32b2b; height: 38px; padding: 0; width: 32px; }
+#resumo { margin: 15px 0; }.linha { align-items: baseline; display: flex; justify-content: space-between; gap: 12px; padding: 9px 0; }.linha + .linha { border-top: 1px solid #edf0ed; }.positivo { color: #08713e; }.negativo { color: #a32b2b; }
+@media (max-width: 480px) { .pessoa { grid-template-columns: 1fr 100px 32px; } .card { padding: 17px; } }
